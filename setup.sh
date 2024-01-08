@@ -12,6 +12,7 @@ else
   printf "Skipping update as flag is set\\n"
 fi
 
-sleep 3m
+# move script with env variables to correct location
+mv /tmp/start-server.sh /opt/smalland/start-server.sh
 
-exec /opt/smalland/SMALLANDDedicatedServer_Linux/start-server.sh
+exec /opt/smalland/start-server.sh
