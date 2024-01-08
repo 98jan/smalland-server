@@ -25,4 +25,4 @@ PARAMS="${PARAMS} -NOSTEAM -log"
 echo "Starting SMALLAND server as:"
 echo "./SMALLANDServer.sh $PARAMS"
 
-/opt/smalland/SMALLANDDedicatedServer_Linux/SMALLANDServer.sh $PARAMS
+/opt/smalland/SMALLANDServer.sh $PARAMS
