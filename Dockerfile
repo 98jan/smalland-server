@@ -57,6 +57,7 @@ ADD setup.sh /opt/smalland/setup.sh
 
 RUN ls -l /opt/smalland
 RUN chmod +x /opt/smalland/setup.sh
+RUN chmox +x /opt/smalland/custom-start-server.sh
 RUN ls -l /opt/smalland
 
 WORKDIR /opt/smalland
