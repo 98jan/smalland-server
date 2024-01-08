@@ -41,7 +41,9 @@ ENV SERVERNAME="Dedicated Server" \
     CLIENTID="xyza78918KT08TkA6emolUay8yhvAAy2" \
     CLIENTSECRET="aN2GtVw7aHb6hx66HwohNM+qktFaO3vtrLSbGdTzZWk" \
     STEAMAPPID="808040" \
-    PRIVATEKEY=""
+    PRIVATEKEY="" \
+    USER=steam \
+    HOME=/home/steam \
 
 EXPOSE 7777/udp
 
