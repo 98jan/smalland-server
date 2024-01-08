@@ -43,7 +43,7 @@ ENV SERVERNAME="Dedicated Server" \
     STEAMAPPID="808040" \
     PRIVATEKEY="" \
     USER=steam \
-    HOME=/home/steam \
+    HOME=/home/steam
 
 EXPOSE 7777/udp
 
