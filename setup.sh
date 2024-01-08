@@ -15,4 +15,4 @@ fi
 # move script with env variables to correct location
 mv /tmp/start-server.sh /opt/smalland/start-server.sh
 
-exec /opt/smalland/start-server.sh
+exec /opt/smalland/custom-start-server.sh

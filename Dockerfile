@@ -8,9 +8,9 @@ RUN set -x \
  && gosu nobody true
 
 # Name of the server as it should appear on the server browser screen (for example "DedicatedServer")
-ENV SERVERNAME="Dedicated Server" \
+ENV SERVERNAME="98jan Dedicated Server" \
 # World name which corresponds to the the save file name (for example "World")
-    WORLDNAME="World" \
+    WORLDNAME="98jan World" \
 # Password, leave it empty for open servers (for example "beautyPassword", can be empty "")
     PASSWORD="beautyPassword" \
 # Friendly fire between players, aka PVP (0 or 1)
@@ -52,7 +52,7 @@ EXPOSE 7777/udp
 RUN mkdir /opt/smalland
 RUN chown steam:steam /opt/smalland
 
-ADD start-server.sh /tmp/
+ADD start-server.sh /opt/smalland/custom-start-server.sh
 ADD setup.sh /opt/smalland/setup.sh
 
 RUN ls -l /opt/smalland
