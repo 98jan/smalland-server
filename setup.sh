@@ -5,21 +5,9 @@ if [[ "${SKIPUPDATE,,}" != "false" ]] && [ ! -f "/config/gamefiles/FactoryServer
     SKIPUPDATE="false"
 fi
 
-# create needed folders
-mkdir -p \
-  /config/backups \
-  /config/gamefiles \
-  /config/overrides \
-  /config/saved/blueprints \
-  /config/saved/server \
-  /config/LinuxServer \
-  /config/Logs \
-  /config/server \
-  || exit 1
-
 if [[ "${SKIPUPDATE,,}" != "true" ]]; then
   printf "Downloading the latest version of the game...\\n"
-  steamcmd +force_install_dir /config/gamefiles +login anonymous +app_update "$STEAMAPPID" -beta "$STEAMBETAFLAG" validate +quit
+  steamcmd +force_install_dir /opt/smalland +login anonymous +app_update "$STEAMAPPID" -beta "$STEAMBETAFLAG" validate +quit
 else
   printf "Skipping update as flag is set\\n"
 fi
