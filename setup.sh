@@ -12,4 +12,6 @@ else
   printf "Skipping update as flag is set\\n"
 fi
 
+sleep 3m
+
 exec /opt/smalland/SMALLANDDedicatedServer_Linux/start-server.sh
