@@ -19,11 +19,11 @@ ENV SERVERNAME="98jan Dedicated Server" \
     PEACEFULMODE=0 \
 # Keep inventory on death (0 or 1)
     KEEPINVENTORY=0 \
-# Disable building wather deterioration (0 or 1)
+# Disable building weather deterioration (0 or 1)
     NODETERIORATION=0 \
 # Private server is hidden on the server browser (0 or 1)
     PRIVATE=0 \
-# Length of day in seconds (default is 1800 which is 30 minutess)
+# Length of day in seconds (default is 1800 which is 30 minutes)
     LENGTHOFDAYSECONDS=1800 \
 # Length of season in seconds (default is 10800 which is 3 hours)
     LENGTHOFSEASONSECONDS=10800 \
