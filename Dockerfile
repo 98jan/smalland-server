@@ -43,7 +43,8 @@ ENV SERVERNAME="98jan Dedicated Server" \
     STEAMAPPID="808040" \
     PRIVATEKEY="" \
     USER=steam \
-    HOME=/home/steam
+    HOME=/home/steam \
+    SERVERIP="0.0.0.0"
 
 EXPOSE 7777/udp
 

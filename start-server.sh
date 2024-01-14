@@ -22,6 +22,10 @@ PARAMS="${PARAMS} -ini:Engine:[EpicOnlineServices]:DedicatedServerClientSecret=$
 PARAMS="${PARAMS} -port=${PORT}"
 PARAMS="${PARAMS} -NOSTEAM -log"
 
+if [ -n "$SERVERIP" ]; then
+    PARAMS="${PARAMS} -multihome=\"$SERVERIP\""
+fi
+
 echo "Starting SMALLAND server as:"
 echo "./SMALLANDServer.sh $PARAMS"
 
